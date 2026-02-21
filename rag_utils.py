@@ -100,9 +100,13 @@ def extract_text_with_ocr_pdf2image(file_path: str) -> str:
     
     try:
         from pdf2image import convert_from_path
-        
+
         print(f"🔍 Trying OCR with pdf2image from {file_path}...")
-        images = convert_from_path(file_path, dpi=200)
+        # Pass explicit poppler_path on Windows so pdfinfo/pdftoppm can be found
+        if os.path.exists(poppler_path):
+            images = convert_from_path(file_path, dpi=200, poppler_path=poppler_path)
+        else:
+            images = convert_from_path(file_path, dpi=200)
         print(f"✅ Converted PDF to {len(images)} image(s)")
         
         extracted_text = ""
