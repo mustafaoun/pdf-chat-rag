@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+pdfplumber
+pytesseract
+pdf2image
+PyMuPDF
+Pillow
+chromadb
+sentence-transformers
+langchain
+langchain-groq
+langchain-community
+langchain-text-splitters

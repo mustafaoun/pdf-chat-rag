@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Virtualenv
+venv/
+ENV/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temp and local files
+temp.pdf
+.env
+.env.local
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS generated files
+Thumbs.db
+
+# Chroma/DB or other local storage
+chromadb/ 
+
+# Ignore compiled extensions
+*.so
