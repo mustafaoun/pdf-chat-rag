@@ -91,21 +91,11 @@ git commit -m "Remove temp PDF"
 # git filter-branch --index-filter 'git rm --cached --ignore-unmatch temp.pdf' -- --all
 ```
 
-## Make this repo popular (tips)
-- Write a clear, attractive `README.md` with screenshots or GIFs.
-- Add a short demo GIF of the app in use (upload to README via GitHub). Use `screencastify` or `kap`.
-- Add topics/tags on GitHub: `pdf`, `rAG`, `streamlit`, `ocr`, `langchain`.
-- Create a short tutorial or blog post and share on Twitter, Reddit (r/MachineLearning, r/LanguageTechnology), Hacker News.
-- Add a LICENSE (MIT or Apache-2.0) so others can use it freely.
-- Add a minimal GitHub Action to run basic lint/tests and show CI passing.
 
-## Security notes
-- Do not commit API keys or private data.
-- Use GitHub secrets to store `GROQ_API_KEY` for workflows.
+
 
 ## License
-Add a license file if you want to make this repo open-source-friendly (MIT recommended).
-
+MIT
 ---
 
 If you want, I can:
